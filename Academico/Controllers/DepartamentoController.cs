@@ -104,7 +104,7 @@ namespace Academico.Controllers
             {
                 return NotFound();
             }
-            var departamento = await _context.Instituicoes.SingleOrDefaultAsync(i => i.Id == id);
+            var departamento = await _context.Departamentos.SingleOrDefaultAsync(i => i.DepartamentoId == id);
             if (departamento == null)
             {
                 return NotFound();
